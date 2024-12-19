@@ -1,9 +1,12 @@
 pipeline {
     agent any
 
-    stages {
-        
-
+        environment {
+        AWS_ACCESS_KEY_ID = 'amazonlinux'    // Replace with your AWS access key
+        AWS_SECRET_ACCESS_KEY = 'amazonlinux'    // Replace with your AWS secret key
+        AWS_DEFAULT_REGION = 'us-east-1'
+        }
+   stages {
         stage('Checkout') {
             steps {
                 deleteDir()
