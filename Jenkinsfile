@@ -2,8 +2,9 @@ pipeline {
     agent any
 
         environment {
-        AWS_ACCESS_KEY_ID = 'amazonlinux'    // Replace with your AWS access key
-        AWS_SECRET_ACCESS_KEY = 'amazonlinux'    // Replace with your AWS secret key
+        AWS_ACCESS_KEY_ID = credentials('amazonlinux')  // ID from Jenkins credentials store
+        AWS_SECRET_ACCESS_KEY = credentials('amazonlinux')  // ID from Jenkins credentials store
+     }    // Replace with your AWS secret key
         AWS_DEFAULT_REGION = 'us-east-1'
         }
    stages {
