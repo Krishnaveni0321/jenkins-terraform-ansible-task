@@ -11,7 +11,7 @@ pipeline {
             steps {
                 deleteDir()
                 sh 'echo cloning repo'
-                sh 'git clone https://github.com/rarvez77/ansible-task.git' 
+                sh 'https://github.com/Krishnaveni0321/jenkins-terraform-ansible-task.git' 
             }
         }
         
